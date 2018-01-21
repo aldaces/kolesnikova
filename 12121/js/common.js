@@ -103,6 +103,4 @@ $(function() {
             $('body,html').animate({scrollTop:0},800); 
         }); 
     });
-    $(":input").inputmask();
-    $("#applicationTelephone").inputmask({"mask": "(999) 999-9999"});
 });
