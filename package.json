@@ -1,12 +1,12 @@
 {
-  "name": "optimizedhtml",
+  "name": "kolesnokova",
   "version": "2.0.1",
-  "description": "OptimizedHTML - Start HTML Template",
+  "description": "HTML site for photographer",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "WebDesign Master",
+  "author": "Inf",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.13",
@@ -24,5 +24,12 @@
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.8",
     "vinyl-ftp": "^0.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/aldaces/kolesnikova.git"
+  },
+  "optionalDependencies": {
+    "fsevents": "*"
   }
 }

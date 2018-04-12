@@ -1,4 +1,4 @@
-var gulp           = require('gulp'),
+let gulp           = require('gulp'),
 		gutil          = require('gulp-util' ),
 		sass           = require('gulp-sass'),
 		browserSync    = require('browser-sync'),
@@ -73,20 +73,20 @@ gulp.task('imagemin', function() {
 
 gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 
-	var buildFiles = gulp.src([
+	let buildFiles = gulp.src([
 		'app/*.html',
 		'app/.htaccess',
 		]).pipe(gulp.dest('dist'));
 
-	var buildCss = gulp.src([
+	let buildCss = gulp.src([
 		'app/css/main.min.css',
 		]).pipe(gulp.dest('dist/css'));
 
-	var buildJs = gulp.src([
+	let buildJs = gulp.src([
 		'app/js/scripts.min.js',
 		]).pipe(gulp.dest('dist/js'));
 
-	var buildFonts = gulp.src([
+	let buildFonts = gulp.src([
 		'app/fonts/**/*',
 		]).pipe(gulp.dest('dist/fonts'));
 
@@ -94,7 +94,7 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 
 gulp.task('deploy', function() {
 
-	var conn = ftp.create({
+	let conn = ftp.create({
 		host:      'hostname.com',
 		user:      'username',
 		password:  'userpassword',
@@ -102,7 +102,7 @@ gulp.task('deploy', function() {
 		log: gutil.log
 	});
 
-	var globs = [
+	let globs = [
 	'dist/**',
 	'dist/.htaccess',
 	];
