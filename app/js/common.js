@@ -17,7 +17,9 @@ $(function() {
     });
     //slider
 	$('.slick-slider').slick({
-		autoplay: true
+        autoplay: true,
+        arrows: true,
+        fade: true
     });
     //gallery
 	$('#js-grid-masonry').cubeportfolio({
